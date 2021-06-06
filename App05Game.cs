@@ -84,11 +84,13 @@ namespace App05MonoGame
             score = 0;
             health = 100;
 
-            base.Initialize();
+            
             asteroidHandler = new AsteroidHandler(
                Content.Load<Texture2D>("Actors/Stones2Filled_01"),
                Content.Load<Texture2D>("Actors/Stones2Filled_02"),
                HD_Height, HD_Width);
+
+            base.Initialize();
         }
 
         /// <summary>
